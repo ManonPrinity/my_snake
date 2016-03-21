@@ -1,0 +1,29 @@
+body
+{
+    background:#000;
+    color:#FFF;
+}
+canvas
+{
+	display: block;
+	position: relative;
+	text-align: center;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+    background:#FFF;
+}
+#controls
+{
+    position:absolute;
+    top:0;
+    right:0;
+    margin:10px;
+}
+
+#left_aside
+{
+	width: 180px;
+	height: auto;
+	background-color: red;
+}
