@@ -1,34 +1,34 @@
-!DOCTYPE HTML>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>MySnake</title>
+<!DOCTYPE HTML>
+    <html>
+        <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <link rel="stylesheet" href="css/style.css" />
+            <title>MySnake</title>
 
-</head>
-<body>
+        </head>
+        <body>
 
-<aside id="left_aside">
-	
-</aside>
+            <aside id="left_aside">
+                <input type="button" id="pause" value="Play" onClick="snake.game.pause(this);" accesskey="p">
+                <input type="button" id="restart" value="Restart" onClick="snake.game.restart();">
+                    <br/><br/>
+                <input type="button" id="fullscreen" value="Play Fullscreen" onClick="snake.game.fullscreen();">
+                    <br/><br/>
+                <div style="font-size:24px;">
+                    Score : 
+                <span id="scoreboard">0</span>
+                </div>
+            </aside>
 
-<canvas width="850" height="600" id="canvas" style="border:1px solid #333;" onclick="snake.game.begin();">
-</canvas>
+            <canvas width="850" height="600" id="canvas" style="border:6px solid #50bb18;" onclick="snake.game.begin();">
+            </canvas>
 
-<aside id="right_aside">
-    <input type="button" id="pause" value="Play" onClick="snake.game.pause(this);" accesskey="p">
-    <input type="button" id="restart" value="Restart" onClick="snake.game.restart();">
-    <br/><br/>
-    <input type="button" id="fullscreen" value="Play Fullscreen" onClick="snake.game.fullscreen();">
-    <br/><br/>
-    <div style="font-size:24px;">
-    Score : 
-    <span id="scoreboard">0</span>
-    </div>
-</aside>
+            <aside id="right_aside">
+            </aside>
 
 
-<div id="controls" style="float:right; text-align:center;">
-</div>
-<script type="text/javascript" src="script/script.js"></script>
-</body>
-</html>
+            <div id="controls" style="float:right; text-align:center;">
+            </div>
+            <script type="text/javascript" src="script/script.js"></script>
+        </body>
+    </html>

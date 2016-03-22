@@ -1,17 +1,18 @@
 body
 {
-    background:#000;
+    background:#5f6a29;
     color:#FFF;
 }
 canvas
 {
 	display: block;
-	position: relative;
+	position: absolute;
 	text-align: center;
-	top: 0px;
+	top: 50px;
 	right: 0px;
 	left: 0px;
-    background:#FFF;
+	margin: auto;
+    background:#f8fbef;
 }
 #controls
 {
@@ -25,5 +26,4 @@ canvas
 {
 	width: 180px;
 	height: auto;
-	background-color: red;
 }

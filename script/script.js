@@ -12,7 +12,7 @@ function launchFullscreen(element) {
   }
 }
 window.onload = function(){
-    //document.addEventListener("fullscreenchange", function(){snake.game.adjust();});
+    document.addEventListener("fullscreenchange", function(){snake.game.adjust();});
     document.addEventListener("webkitfullscreenchange", function(){snake.game.adjust();});
     document.addEventListener("mozfullscreenchange", function(){snake.game.adjust();});
     document.addEventListener("MSFullscreenChange", function(){snake.game.adjust();});
@@ -162,7 +162,7 @@ window.onload = function(){
         function feed()
         {
             ctx.beginPath();
-            ctx.fillStyle = "#ff0000";
+            ctx.fillStyle = "#99f46a";
             ctx.fillRect(food[0],food[1],10,10);
             ctx.fill();
             ctx.closePath();
@@ -188,11 +188,11 @@ window.onload = function(){
                     document.getElementById('pause').disabled='true';
                     snake.game.status=false;
                     ctx.clearRect(0,0,canvas.width,canvas.height);
-                    ctx.font='40px san-serif';
-                    ctx.fillText('Game Over',300,250);
-                    ctx.font = '20px san-serif';
+                    ctx.font='40px sans-serif';
+                    ctx.fillText('Game Over',310,250);
+                    ctx.font = '20px sans-serif';
                     ctx.fillStyle='#000000';
-                    ctx.fillText('To Play again Refresh the page or click the Restarts button',200,300);
+                    ctx.fillText('To Play again Refresh the page or click the Restarts button',300,300);
                     throw ('Game Over');
             }
             else
@@ -227,22 +227,15 @@ window.onload = function(){
         }
         function start()
         {
-            ctx.fillStyle='#000000';
+            ctx.fillStyle='#f6fae3';
             ctx.fillRect(0,0,canvas.width,canvas.height);
-            ctx.fillStyle='#ffffff';
-            ctx.font='40px helvatica';
-            ctx.fillText('Prinity',370,140);
-            ctx.font='20px san-serif';
+            ctx.fillStyle='#9fbd13';
+            ctx.font='60px helvatica';
+            ctx.fillText('Prinity',360,140);
+            ctx.font='30px san-serif';
             ctx.fillText('presente',395,190);
-            ctx.font='italic 60px san-serif';
-            ctx.fillText('My Snake',240,280);
-            var img = new Image();
-            img.onload = function()
-            {
-                ctx.drawImage(img,300,300,200,200);
-                ctx.fillRect(410,330,10,10);
-            }
-            img.src ='snake.png';
+            ctx.font='60px sans-serif';
+            ctx.fillText('--- My Snake ---',240,280);2
         }
         function fullscreen()
         {
