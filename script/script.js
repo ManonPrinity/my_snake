@@ -12,7 +12,7 @@ function launchFullscreen(element) {
   }
 }
 window.onload = function(){
-    document.addEventListener("fullscreenchange", function(){snake.game.adjust();});
+    //document.addEventListener("fullscreenchange", function(){snake.game.adjust();});
     document.addEventListener("webkitfullscreenchange", function(){snake.game.adjust();});
     document.addEventListener("mozfullscreenchange", function(){snake.game.adjust();});
     document.addEventListener("MSFullscreenChange", function(){snake.game.adjust();});
@@ -231,11 +231,11 @@ window.onload = function(){
             ctx.fillRect(0,0,canvas.width,canvas.height);
             ctx.fillStyle='#ffffff';
             ctx.font='40px helvatica';
-            ctx.fillText('Vignesh',370,140);
+            ctx.fillText('Prinity',370,140);
             ctx.font='20px san-serif';
-            ctx.fillText('presents',395,190);
+            ctx.fillText('presente',395,190);
             ctx.font='italic 60px san-serif';
-            ctx.fillText('Feed The Snake',240,280);
+            ctx.fillText('My Snake',240,280);
             var img = new Image();
             img.onload = function()
             {
